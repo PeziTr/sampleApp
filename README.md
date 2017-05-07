@@ -25,10 +25,14 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Development Heroku server
 
-Move the angular-cli dependency from devDependencies to dependencies in your package.json
+Move the angular-cli dependency from devDependencies to dependencies in your package.json.
+
 Create a postinstall script in your package.json which builds your project to a dist directory on your server: ng build --aot -prod
+
 OR 
+
 Replace start in package.json with below:
+
 "start": 
 {
     "node server.js",
